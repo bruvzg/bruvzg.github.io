@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>bruvzg.github.io</title>
+    <link href="https://bruvzg.github.io/feed.xml" rel="self" />
+    <link href="https://bruvzg.github.io" />
+    <updated>1970-01-01T03:00:00+03:00</updated>
+    <author>
+        <name>bruvzg</name>
+    </author>
+    <id>https://bruvzg.github.io</id>
+
+</feed>

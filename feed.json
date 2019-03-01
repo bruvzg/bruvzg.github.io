@@ -1,0 +1,14 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "bruvzg.github.io",
+    "description": "",
+    "home_page_url": "https://bruvzg.github.io",
+    "feed_url": "https://bruvzg.github.io/feed.json",
+    "user_comment": "",
+    "icon": "https://bruvzg.github.io/media/website/logo.png",
+    "author": {
+        "name": "bruvzg"
+    },
+    "items": [
+    ]
+}
