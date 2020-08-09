@@ -1,0 +1,13 @@
+diff --git a/src/Vulkan/VkConfig.hpp b/src/Vulkan/VkConfig.hpp
+index 37708fc15..2796fe459 100644
+--- a/src/Vulkan/VkConfig.hpp
++++ b/src/Vulkan/VkConfig.hpp
+@@ -58,7 +58,7 @@ enum
+ 
+ enum
+ {
+-	MAX_BOUND_DESCRIPTOR_SETS = 4,
++	MAX_BOUND_DESCRIPTOR_SETS = 16,
+ 	MAX_VERTEX_INPUT_BINDINGS = 16,
+ 	MAX_PUSH_CONSTANT_SIZE = 128,
+ };

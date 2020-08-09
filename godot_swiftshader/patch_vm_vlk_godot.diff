@@ -1,0 +1,13 @@
+diff --git a/drivers/vulkan/rendering_device_vulkan.cpp b/drivers/vulkan/rendering_device_vulkan.cpp
+index fb890491a4..fcb51c8e19 100644
+--- a/drivers/vulkan/rendering_device_vulkan.cpp
++++ b/drivers/vulkan/rendering_device_vulkan.cpp
+@@ -5072,7 +5072,7 @@ RID RenderingDeviceVulkan::render_pipeline_create(RID p_shader, FramebufferForma
+ 	tessellation_create_info.sType = VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_STATE_CREATE_INFO;
+ 	tessellation_create_info.pNext = nullptr;
+ 	tessellation_create_info.flags = 0;
+-	ERR_FAIL_COND_V(p_rasterization_state.patch_control_points < 1 || p_rasterization_state.patch_control_points > limits.maxTessellationPatchSize, RID());
++	//ERR_FAIL_COND_V(p_rasterization_state.patch_control_points < 1 || p_rasterization_state.patch_control_points > limits.maxTessellationPatchSize, RID());
+ 	tessellation_create_info.patchControlPoints = p_rasterization_state.patch_control_points;
+ 
+ 	VkPipelineViewportStateCreateInfo viewport_state_create_info;
