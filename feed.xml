@@ -10,6 +10,96 @@
     <id>https://bruvzg.github.io</id>
 
     <entry>
+        <title>Using Godot with SwiftShader Vulkan software emulation</title>
+        <author>
+            <name>bruvzg</name>
+        </author>
+        <link href="https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html"/>
+        <id>https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html</id>
+            <category term="Godot"/>
+
+        <updated>2020-10-14T13:22:32+03:00</updated>
+            <summary>
+                <![CDATA[
+                    Download SwiftShader source - https://swiftshader.googlesource.com/SwiftShader/git clone https://swiftshader.googlesource.com/SwiftShader Download apply following patch to the SwiftShader source to bump descriptor limit - pathc_vm_vlk_swiftshader.diffgit apply pathc_vm_vlk_swiftshader.diffBuild SwiftShader ICD as described in https://swiftshader.googlesource.com/SwiftShader/#buildingDownload master branch of Godot - https://github.com/godotengine/godotgit clone https://github.com/godotengine/godot.gitDownload apply following patch to Godot source to disable&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <ol>
+<li>Download SwiftShader source - <a href="https://swiftshader.googlesource.com/SwiftShader/" target="_blank" rel="noopener noreferrer">https://swiftshader.googlesource.com/SwiftShader/</a>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">git clone https://swiftshader.googlesource.com/SwiftShader</td>
+</tr>
+</tbody>
+</table>
+<br><a href="https://swiftshader.googlesource.com/SwiftShader/" target="_blank" rel="noopener noreferrer"></a></li>
+<li>Download apply following patch to the  SwiftShader source to bump descriptor limit - <a href="https://bruvzg.github.io/media/files/patch_vm_vlk_swiftshader.diff" target="_blank" rel="noopener noreferrer">pathc_vm_vlk_swiftshader.diff</a>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">git apply pathc_vm_vlk_swiftshader.diff</td>
+</tr>
+</tbody>
+</table>
+<a href="https://bruvzg.github.io/media/files/patch_vm_vlk_swiftshader.diff" target="_blank" rel="noopener noreferrer"></a></li>
+<li>Build SwiftShader ICD as described in <a href="https://swiftshader.googlesource.com/SwiftShader/#building" target="_blank" rel="noopener noreferrer">https://swiftshader.googlesource.com/SwiftShader/#building</a></li>
+<li>Download <em>master</em> branch of Godot - <a href="https://github.com/godotengine/godot" target="_blank" rel="noopener noreferrer">https://github.com/godotengine/godot</a>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">git clone https://github.com/godotengine/godot.git</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Download apply following patch to Godot source to disable tessellation check - <a href="https://bruvzg.github.io/media/files/patch_vm_vlk_godot.diff" target="_blank" rel="noopener noreferrer">patch_vm_vlk_godot.diff</a>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">git apply patch_vm_vlk_godot.diff</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Build Godot as described in <a href="https://docs.godotengine.org/en/latest/development/compiling/index.html" target="_blank" rel="noopener noreferrer">https://docs.godotengine.org/en/latest/development/compiling/index.html</a></li>
+<li>Create <em>SwiftShaderICD.json</em> file with the following content:
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<div>{</div>
+<div>    "file_format_version" : "1.0.0",</div>
+<div>    "ICD": {</div>
+<div>        "library_path": "<span style="color: #e67e23;"><strong>{ABSOLUTE_PATH_TO}</strong></span>/libvk_swiftshader.so",</div>
+<div>        "api_version" : "1.0.0"</div>
+<div>    }</div>
+<div>}</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Run Godot using following command (executable name may vary depending on build config):
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<div>
+<div>VK_ICD_FILENAMES=./SwiftShaderICD.json ./godot.linuxbsd.tools.64</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+            ]]>
+        </content>
+    </entry>
+    <entry>
         <title>Complex text layouts progress report #1:</title>
         <author>
             <name>bruvzg</name>
@@ -19,7 +109,7 @@
             <category term="Godot"/>
             <category term="CTL"/>
 
-        <updated>2020-10-14T12:32:07+03:00</updated>
+        <updated>2020-10-14T13:22:32+03:00</updated>
             <summary>
                 <![CDATA[
                     Introduction:Currently, text display in Godot engine is extremely limited, text is drawn character-by-character, left-to-right without kerning and support for any other font features. Godot is incapable of correctly displaying text in the languages that are written right-to-left (e.g. Arabic, Hebrew), have context-sensitive characters (e.g. Arabic&hellip;
@@ -432,9 +522,9 @@
 <li><em><strong>TextServer</strong></em> implementation proposal -  <a href="https://github.com/godotengine/godot-proposals/issues/1180" target="_blank" rel="noopener noreferrer">https://github.com/godotengine/godot-proposals/issues/1180</a></li>
 <li>UTF-32 transition - <a href="https://github.com/godotengine/godot/pull/40999" target="_blank" rel="noopener noreferrer">https://github.com/godotengine/godot/pull/40999</a>  (merged to the master branch).</li>
 <li>Text server implementations - <a href="https://github.com/godotengine/godot/pull/41100" target="_blank" rel="noopener noreferrer">https://github.com/godotengine/godot/pull/41100</a> (first 4 commits, PR is regularly rebased to keep up with upstream changes, exact commit hashes may vary).</li>
-<li>BiDi and shaping process overview diagram - <a href="https://bruvzg.github.io/gdtl_docs/gdtl_operation_notes_1_shaping_draft.pdf" target="_blank" rel="noopener noreferrer">https://bruvzg.github.io/gdtl_docs/gdtl_operation_notes_1_shaping_draft.pdf</a></li>
-<li>Line breaking process overview diagram - <a href="https://bruvzg.github.io/gdtl_docs/gdtl_operation_notes_2_line_breaking_draft.pdf" target="_blank" rel="noopener noreferrer">https://bruvzg.github.io/gdtl_docs/gdtl_operation_notes_2_line_breaking_draft.pdf</a></li>
-<li>Line justification process overview diagram - <a href="https://bruvzg.github.io/gdtl_docs/gdtl_operation_notes_3_justification_draft.pdf" target="_blank" rel="noopener noreferrer">https://bruvzg.github.io/gdtl_docs/gdtl_operation_notes_3_justification_draft.pdf</a></li>
+<li>BiDi and shaping process overview diagram - <a href="https://bruvzg.github.io/media/files/gdtl_operation_notes_1_shaping_draft.pdf" target="_blank" rel="noopener noreferrer">gdtl_operation_notes_1_shaping_draft.pdf</a></li>
+<li>Line breaking process overview diagram - <a href="https://bruvzg.github.io/null" target="_blank" rel="noopener noreferrer">gdtl_operation_notes_2_line_breaking_draft.pdf</a></li>
+<li>Line justification process overview diagram - <a href="https://bruvzg.github.io/media/files/gdtl_operation_notes_3_justification_draft.pdf" target="_blank" rel="noopener noreferrer">gdtl_operation_notes_3_justification_draft.pdf</a></li>
 <li>GDNative library template - <a href="https://github.com/bruvzg/gdnative_text_server_template" target="_blank" rel="noopener noreferrer">https://github.com/bruvzg/gdnative_text_server_template</a> (dummy GDNative library implementation, intended as a base for future CoreText, DirectWrite based text servers or/and moving ICU/HarfBuzz based text server out of the core engine distribution).</li>
 </ul>
 <h2>Additional resources:</h2>
@@ -460,7 +550,7 @@
             <category term="Module"/>
             <category term="Godot"/>
 
-        <updated>2020-10-14T12:32:07+03:00</updated>
+        <updated>2020-10-14T13:22:32+03:00</updated>
             <summary>
                 <![CDATA[
                     Godot reverse engineering tools: Source code/Download
@@ -482,7 +572,7 @@
             <category term="Module"/>
             <category term="Godot"/>
 
-        <updated>2020-10-14T12:32:07+03:00</updated>
+        <updated>2020-10-14T13:22:32+03:00</updated>
             <summary>
                 <![CDATA[
                     Source code/Download
