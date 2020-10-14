@@ -19,7 +19,7 @@
             <category term="Godot"/>
             <category term="CTL"/>
 
-        <updated>2020-10-14T11:25:20+03:00</updated>
+        <updated>2020-10-14T12:32:07+03:00</updated>
             <summary>
                 <![CDATA[
                     Introduction:Currently, text display in Godot engine is extremely limited, text is drawn character-by-character, left-to-right without kerning and support for any other font features. Godot is incapable of correctly displaying text in the languages that are written right-to-left (e.g. Arabic, Hebrew), have context-sensitive characters (e.g. Arabic&hellip;
@@ -427,7 +427,7 @@
 <p> </p>
 <h3><em><strong>TextServerGDNative</strong></em>:</h3>
 <p>Wrapper class for the GDNative text server implementations.</p>
-<h2><em><strong>Reference work:</strong></em></h2>
+<h2><strong>Reference work:</strong></h2>
 <ul>
 <li><em><strong>TextServer</strong></em> implementation proposal -  <a href="https://github.com/godotengine/godot-proposals/issues/1180" target="_blank" rel="noopener noreferrer">https://github.com/godotengine/godot-proposals/issues/1180</a></li>
 <li>UTF-32 transition - <a href="https://github.com/godotengine/godot/pull/40999" target="_blank" rel="noopener noreferrer">https://github.com/godotengine/godot/pull/40999</a>  (merged to the master branch).</li>
@@ -460,7 +460,7 @@
             <category term="Module"/>
             <category term="Godot"/>
 
-        <updated>2020-10-14T11:25:20+03:00</updated>
+        <updated>2020-10-14T12:32:07+03:00</updated>
             <summary>
                 <![CDATA[
                     Godot reverse engineering tools: Source code/Download
@@ -482,7 +482,7 @@
             <category term="Module"/>
             <category term="Godot"/>
 
-        <updated>2020-10-14T11:25:20+03:00</updated>
+        <updated>2020-10-14T12:32:07+03:00</updated>
             <summary>
                 <![CDATA[
                     Source code/Download
