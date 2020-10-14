@@ -3,7 +3,7 @@
     <title>bruvzg.github.io</title>
     <link href="https://bruvzg.github.io/feed.xml" rel="self" />
     <link href="https://bruvzg.github.io" />
-    <updated>2020-10-14T14:40:34+03:00</updated>
+    <updated>2020-10-14T14:56:13+03:00</updated>
     <author>
         <name>bruvzg</name>
     </author>
@@ -109,7 +109,7 @@
             <category term="Godot"/>
             <category term="CTL"/>
 
-        <updated>2020-10-14T14:40:34+03:00</updated>
+        <updated>2020-10-14T14:56:13+03:00</updated>
             <summary>
                 <![CDATA[
                     Introduction:Currently, text display in Godot engine is extremely limited, text is drawn character-by-character, left-to-right without kerning and support for any other font features. Godot is incapable of correctly displaying text in the languages that are written right-to-left (e.g. Arabic, Hebrew), have context-sensitive characters (e.g. Arabic&hellip;
@@ -478,7 +478,7 @@
 <h3>Preparation work:</h3>
 <p><strong><em>wchar_t</em></strong> type that was previously used by Godot to store Unicode string, is inconsistent and have different size on different platforms. Due to lack of UTF-16 surrogate pair support Godot was incapable to store and display character outside the basic multilingual plane (characters with the codes above 0xFFFF, e.g. emojis) on Windows, where <strong><em>wchar_t</em></strong> is 16-bit.<br><br>For the ease of <em><strong>TextServer</strong></em> and GDNative interface development, Godot strings were changed to always use C++11 <em><strong>char32_t</strong></em> type and store string in UTF-32 encoding.<br>Additionally, fully functional (with surrogate pairs support) conversion to and from UTF-16 is implemented for use with Windows APIs.<br>All ASCII/Latin-1, UTF-8, UTF-16, and UTF-32 functions are exposed to GDNative and covered with unit tests.</p>
 <h3><em><strong>TextServer</strong></em> structure:</h3>
-<figure class="post__image post__image--center" ><img loading="lazy" src="https://bruvzg.github.io/media/posts/3//ts_map.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/3//responsive/ts_map-xs.png 300w ,https://bruvzg.github.io/media/posts/3//responsive/ts_map-sm.png 480w ,https://bruvzg.github.io/media/posts/3//responsive/ts_map-md.png 768w ,https://bruvzg.github.io/media/posts/3//responsive/ts_map-lg.png 1024w ,https://bruvzg.github.io/media/posts/3//responsive/ts_map-xl.png 1360w ,https://bruvzg.github.io/media/posts/3//responsive/ts_map-2xl.png 1600w"  alt="TextServer structure overview." width="1200" height="1200">
+<figure class="post__image post__image--center" ><img loading="lazy" src="https://bruvzg.github.io/media/posts/3/ts_map-2.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/3/responsive/ts_map-2-xs.png 300w ,https://bruvzg.github.io/media/posts/3/responsive/ts_map-2-sm.png 480w ,https://bruvzg.github.io/media/posts/3/responsive/ts_map-2-md.png 768w ,https://bruvzg.github.io/media/posts/3/responsive/ts_map-2-lg.png 1024w ,https://bruvzg.github.io/media/posts/3/responsive/ts_map-2-xl.png 1360w ,https://bruvzg.github.io/media/posts/3/responsive/ts_map-2-2xl.png 1600w"  alt="" width="1200" height="1200">
 <figcaption >TextServer structure overview.</figcaption>
 </figure>
 <p>The new implementation introduces `TextServer` singleton, for low level handling of:</p>
