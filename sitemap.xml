@@ -6,7 +6,7 @@
 </url>
 <url>
 <loc>https://bruvzg.github.io/complex-text-layouts-progress-report-1.html</loc>
-<lastmod>2020-10-14T14:56:13+03:00</lastmod>
+<lastmod>2020-10-14T15:14:26+03:00</lastmod>
 <image:image>
 <image:loc>https://bruvzg.github.io/media/posts/3/godot.png</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -35,6 +35,10 @@
 <url>
 <loc>https://bruvzg.github.io/godot-text-to-speech-module.html</loc>
 <lastmod>2020-09-01T11:42:20+03:00</lastmod>
+</url>
+<url>
+<loc>https://bruvzg.github.io/textserver-api-overview.html</loc>
+<lastmod>2020-10-14T15:13:20+03:00</lastmod>
 </url>
 <url>
 <loc>https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html</loc>
