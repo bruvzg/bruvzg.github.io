@@ -3,7 +3,7 @@
     <title>bruvzg.github.io</title>
     <link href="https://bruvzg.github.io/feed.xml" rel="self" />
     <link href="https://bruvzg.github.io" />
-    <updated>1970-01-01T03:00:00+03:00</updated>
+    <updated>2020-10-14T14:40:34+03:00</updated>
     <author>
         <name>bruvzg</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html</id>
             <category term="Godot"/>
 
-        <updated>2020-10-14T13:22:32+03:00</updated>
+        <updated>2020-10-14T13:15:22+03:00</updated>
             <summary>
                 <![CDATA[
                     Download SwiftShader source - https://swiftshader.googlesource.com/SwiftShader/git clone https://swiftshader.googlesource.com/SwiftShader Download apply following patch to the SwiftShader source to bump descriptor limit - pathc_vm_vlk_swiftshader.diffgit apply pathc_vm_vlk_swiftshader.diffBuild SwiftShader ICD as described in https://swiftshader.googlesource.com/SwiftShader/#buildingDownload master branch of Godot - https://github.com/godotengine/godotgit clone https://github.com/godotengine/godot.gitDownload apply following patch to Godot source to disable&hellip;
@@ -109,7 +109,7 @@
             <category term="Godot"/>
             <category term="CTL"/>
 
-        <updated>2020-10-14T13:22:32+03:00</updated>
+        <updated>2020-10-14T14:40:34+03:00</updated>
             <summary>
                 <![CDATA[
                     Introduction:Currently, text display in Godot engine is extremely limited, text is drawn character-by-character, left-to-right without kerning and support for any other font features. Godot is incapable of correctly displaying text in the languages that are written right-to-left (e.g. Arabic, Hebrew), have context-sensitive characters (e.g. Arabic&hellip;
@@ -512,7 +512,7 @@
 <p>Simple, fallback text server without BiDi, shaping, OpenType font features and kashida justification support.<br><br><em><strong>TextServerFallback</strong></em> supports basic font features, like kerning, line breaking (using spaces to detect words), basic justification and have limited vertical text support.<br>Fallback text server is intended for use in the projects that do not need CTL support to avoid CTL overhead. Fallback text server can be used with Godot editor as well, in this case unsupported locales are automatically disabled.</p>
 <p>Supports same font types as the <em><strong>TextServerAdvanced.</strong></em></p>
 <figure class="post__image post__image--center" ><img loading="lazy" src="https://bruvzg.github.io/media/posts/3/Screenshot-2020-10-14-at-11.16.15.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/3/responsive/Screenshot-2020-10-14-at-11.16.15-xs.png 300w ,https://bruvzg.github.io/media/posts/3/responsive/Screenshot-2020-10-14-at-11.16.15-sm.png 480w ,https://bruvzg.github.io/media/posts/3/responsive/Screenshot-2020-10-14-at-11.16.15-md.png 768w ,https://bruvzg.github.io/media/posts/3/responsive/Screenshot-2020-10-14-at-11.16.15-lg.png 1024w ,https://bruvzg.github.io/media/posts/3/responsive/Screenshot-2020-10-14-at-11.16.15-xl.png 1360w ,https://bruvzg.github.io/media/posts/3/responsive/Screenshot-2020-10-14-at-11.16.15-2xl.png 1600w"  alt="No BiDi and contextual shaping." width="484" height="271">
-<figcaption ><em><strong>TextServerFallback</strong></em> - No BiDi and contextual shaping.ion</figcaption>
+<figcaption ><em><strong>TextServerFallback</strong></em> - No BiDi and contextual shaping.</figcaption>
 </figure>
 <p> </p>
 <h3><em><strong>TextServerGDNative</strong></em>:</h3>
@@ -523,7 +523,7 @@
 <li>UTF-32 transition - <a href="https://github.com/godotengine/godot/pull/40999" target="_blank" rel="noopener noreferrer">https://github.com/godotengine/godot/pull/40999</a>  (merged to the master branch).</li>
 <li>Text server implementations - <a href="https://github.com/godotengine/godot/pull/41100" target="_blank" rel="noopener noreferrer">https://github.com/godotengine/godot/pull/41100</a> (first 4 commits, PR is regularly rebased to keep up with upstream changes, exact commit hashes may vary).</li>
 <li>BiDi and shaping process overview diagram - <a href="https://bruvzg.github.io/media/files/gdtl_operation_notes_1_shaping_draft.pdf" target="_blank" rel="noopener noreferrer">gdtl_operation_notes_1_shaping_draft.pdf</a></li>
-<li>Line breaking process overview diagram - <a href="https://bruvzg.github.io/null" target="_blank" rel="noopener noreferrer">gdtl_operation_notes_2_line_breaking_draft.pdf</a></li>
+<li>Line breaking process overview diagram - <a href="https://bruvzg.github.io/media/files/gdtl_operation_notes_2_line_breaking_draft.pdf" target="_blank" rel="noopener noreferrer">gdtl_operation_notes_2_line_breaking_draft.pdf</a></li>
 <li>Line justification process overview diagram - <a href="https://bruvzg.github.io/media/files/gdtl_operation_notes_3_justification_draft.pdf" target="_blank" rel="noopener noreferrer">gdtl_operation_notes_3_justification_draft.pdf</a></li>
 <li>GDNative library template - <a href="https://github.com/bruvzg/gdnative_text_server_template" target="_blank" rel="noopener noreferrer">https://github.com/bruvzg/gdnative_text_server_template</a> (dummy GDNative library implementation, intended as a base for future CoreText, DirectWrite based text servers or/and moving ICU/HarfBuzz based text server out of the core engine distribution).</li>
 </ul>
@@ -550,7 +550,7 @@
             <category term="Module"/>
             <category term="Godot"/>
 
-        <updated>2020-10-14T13:22:32+03:00</updated>
+        <updated>2020-09-01T11:41:12+03:00</updated>
             <summary>
                 <![CDATA[
                     Godot reverse engineering tools: Source code/Download
@@ -572,7 +572,7 @@
             <category term="Module"/>
             <category term="Godot"/>
 
-        <updated>2020-10-14T13:22:32+03:00</updated>
+        <updated>2020-09-01T11:42:20+03:00</updated>
             <summary>
                 <![CDATA[
                     Source code/Download
