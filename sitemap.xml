@@ -26,7 +26,15 @@
 </url>
 <url>
 <loc>https://bruvzg.github.io/complex-text-layouts-progress-report-2.html</loc>
-<lastmod>2020-10-14T12:55:16+03:00</lastmod>
+<lastmod>2020-10-16T12:13:11+03:00</lastmod>
+<image:image>
+<image:loc>https://bruvzg.github.io/media/posts/4/gallery/ui_mirror1-thumbnail.png</image:loc>
+<image:title><![CDATA[Right-to-left UI]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bruvzg.github.io/media/posts/4/gallery/ui_mirror2-thumbnail.png</image:loc>
+<image:title><![CDATA[Left-to-right UI]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://bruvzg.github.io/godot-re-tools.html</loc>
@@ -37,11 +45,15 @@
 <lastmod>2020-09-01T11:42:20+03:00</lastmod>
 </url>
 <url>
+<loc>https://bruvzg.github.io/test-video.html</loc>
+<lastmod>2020-10-16T12:50:30+03:00</lastmod>
+</url>
+<url>
 <loc>https://bruvzg.github.io/textserver-api-overview.html</loc>
 <lastmod>2020-10-14T15:13:20+03:00</lastmod>
 </url>
 <url>
 <loc>https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html</loc>
-<lastmod>2020-10-14T13:15:22+03:00</lastmod>
+<lastmod>2020-10-16T12:26:28+03:00</lastmod>
 </url>
 </urlset>
