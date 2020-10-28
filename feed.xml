@@ -3,102 +3,12 @@
     <title>bruvzg.github.io</title>
     <link href="https://bruvzg.github.io/feed.xml" rel="self" />
     <link href="https://bruvzg.github.io" />
-    <updated>2020-10-28T11:40:16+02:00</updated>
+    <updated>2020-10-28T12:45:00+02:00</updated>
     <author>
         <name>bruvzg</name>
     </author>
     <id>https://bruvzg.github.io</id>
 
-    <entry>
-        <title>Using Godot with SwiftShader Vulkan software emulation</title>
-        <author>
-            <name>bruvzg</name>
-        </author>
-        <link href="https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html"/>
-        <id>https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html</id>
-            <category term="Godot"/>
-
-        <updated>2020-10-16T12:26:28+03:00</updated>
-            <summary>
-                <![CDATA[
-                    Download SwiftShader source - https://swiftshader.googlesource.com/SwiftShader/git clone https://swiftshader.googlesource.com/SwiftShader Download apply following patch to the SwiftShader source to bump descriptor limit - pathc_vm_vlk_swiftshader.diffgit apply pathc_vm_vlk_swiftshader.diffBuild SwiftShader ICD as described in https://swiftshader.googlesource.com/SwiftShader/#buildingDownload master branch of Godot - https://github.com/godotengine/godotgit clone https://github.com/godotengine/godot.gitDownload apply following patch to Godot source to disable&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <ol>
-<li>Download SwiftShader source - <a href="https://swiftshader.googlesource.com/SwiftShader/" target="_blank" rel="noopener noreferrer">https://swiftshader.googlesource.com/SwiftShader/</a>
-<table style="border-collapse: collapse; width: 100%;" border="1">
-<tbody>
-<tr>
-<td style="width: 100%;">git clone https://swiftshader.googlesource.com/SwiftShader</td>
-</tr>
-</tbody>
-</table>
-<br><a href="https://swiftshader.googlesource.com/SwiftShader/" target="_blank" rel="noopener noreferrer"></a></li>
-<li>Download apply following patch to the  SwiftShader source to bump descriptor limit - <a href="https://bruvzg.github.io/media/files/patch_vm_vlk_swiftshader.diff" target="_blank" rel="noopener noreferrer">pathc_vm_vlk_swiftshader.diff</a>
-<table style="border-collapse: collapse; width: 100%;" border="1">
-<tbody>
-<tr>
-<td style="width: 100%;">git apply pathc_vm_vlk_swiftshader.diff</td>
-</tr>
-</tbody>
-</table>
-<a href="https://bruvzg.github.io/media/files/patch_vm_vlk_swiftshader.diff" target="_blank" rel="noopener noreferrer"></a></li>
-<li>Build SwiftShader ICD as described in <a href="https://swiftshader.googlesource.com/SwiftShader/#building" target="_blank" rel="noopener noreferrer">https://swiftshader.googlesource.com/SwiftShader/#building</a></li>
-<li>Download <em>master</em> branch of Godot - <a href="https://github.com/godotengine/godot" target="_blank" rel="noopener noreferrer">https://github.com/godotengine/godot</a>
-<table style="border-collapse: collapse; width: 100%;" border="1">
-<tbody>
-<tr>
-<td style="width: 100%;">git clone https://github.com/godotengine/godot.git</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>Download apply following patch to Godot source to disable tessellation check - <a href="https://bruvzg.github.io/media/files/patch_vm_vlk_godot.diff" target="_blank" rel="noopener noreferrer">patch_vm_vlk_godot.diff</a>
-<table style="border-collapse: collapse; width: 100%;" border="1">
-<tbody>
-<tr>
-<td style="width: 100%;">git apply patch_vm_vlk_godot.diff</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>Build Godot as described in <a href="https://docs.godotengine.org/en/latest/development/compiling/index.html" target="_blank" rel="noopener noreferrer">https://docs.godotengine.org/en/latest/development/compiling/index.html</a></li>
-<li>Create <em>SwiftShaderICD.json</em> file with the following content:
-<table style="border-collapse: collapse; width: 100%;" border="1">
-<tbody>
-<tr>
-<td style="width: 100%;">
-<div>{</div>
-<div>    "file_format_version" : "1.0.0",</div>
-<div>    "ICD": {</div>
-<div>        "library_path": "<span style="color: #e67e23;"><strong>{ABSOLUTE_PATH_TO}</strong></span>/libvk_swiftshader.so",</div>
-<div>        "api_version" : "1.0.0"</div>
-<div>    }</div>
-<div>}</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>Run Godot using following command (executable name may vary depending on build config):
-<table style="border-collapse: collapse; width: 100%;" border="1">
-<tbody>
-<tr>
-<td style="width: 100%;">
-<div>
-<div>VK_ICD_FILENAMES=./SwiftShaderICD.json ./godot.linuxbsd.tools.64</div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-</ol>
-            ]]>
-        </content>
-    </entry>
     <entry>
         <title>Complex text layouts progress report #2:</title>
         <author>
@@ -109,7 +19,7 @@
             <category term="Godot"/>
             <category term="CTL"/>
 
-        <updated>2020-10-28T11:40:16+02:00</updated>
+        <updated>2020-10-28T12:45:00+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://bruvzg.github.io/media/posts/4/ctl_part2_title_image-2.png" alt="" />
@@ -224,6 +134,96 @@
 </ul>
 <p> </p>
 </div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Using Godot with SwiftShader Vulkan software emulation</title>
+        <author>
+            <name>bruvzg</name>
+        </author>
+        <link href="https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html"/>
+        <id>https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html</id>
+            <category term="Godot"/>
+
+        <updated>2020-10-16T12:26:28+03:00</updated>
+            <summary>
+                <![CDATA[
+                    Download SwiftShader source - https://swiftshader.googlesource.com/SwiftShader/git clone https://swiftshader.googlesource.com/SwiftShader Download apply following patch to the SwiftShader source to bump descriptor limit - pathc_vm_vlk_swiftshader.diffgit apply pathc_vm_vlk_swiftshader.diffBuild SwiftShader ICD as described in https://swiftshader.googlesource.com/SwiftShader/#buildingDownload master branch of Godot - https://github.com/godotengine/godotgit clone https://github.com/godotengine/godot.gitDownload apply following patch to Godot source to disable&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <ol>
+<li>Download SwiftShader source - <a href="https://swiftshader.googlesource.com/SwiftShader/" target="_blank" rel="noopener noreferrer">https://swiftshader.googlesource.com/SwiftShader/</a>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">git clone https://swiftshader.googlesource.com/SwiftShader</td>
+</tr>
+</tbody>
+</table>
+<br><a href="https://swiftshader.googlesource.com/SwiftShader/" target="_blank" rel="noopener noreferrer"></a></li>
+<li>Download apply following patch to the  SwiftShader source to bump descriptor limit - <a href="https://bruvzg.github.io/media/files/patch_vm_vlk_swiftshader.diff" target="_blank" rel="noopener noreferrer">pathc_vm_vlk_swiftshader.diff</a>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">git apply pathc_vm_vlk_swiftshader.diff</td>
+</tr>
+</tbody>
+</table>
+<a href="https://bruvzg.github.io/media/files/patch_vm_vlk_swiftshader.diff" target="_blank" rel="noopener noreferrer"></a></li>
+<li>Build SwiftShader ICD as described in <a href="https://swiftshader.googlesource.com/SwiftShader/#building" target="_blank" rel="noopener noreferrer">https://swiftshader.googlesource.com/SwiftShader/#building</a></li>
+<li>Download <em>master</em> branch of Godot - <a href="https://github.com/godotengine/godot" target="_blank" rel="noopener noreferrer">https://github.com/godotengine/godot</a>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">git clone https://github.com/godotengine/godot.git</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Download apply following patch to Godot source to disable tessellation check - <a href="https://bruvzg.github.io/media/files/patch_vm_vlk_godot.diff" target="_blank" rel="noopener noreferrer">patch_vm_vlk_godot.diff</a>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">git apply patch_vm_vlk_godot.diff</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Build Godot as described in <a href="https://docs.godotengine.org/en/latest/development/compiling/index.html" target="_blank" rel="noopener noreferrer">https://docs.godotengine.org/en/latest/development/compiling/index.html</a></li>
+<li>Create <em>SwiftShaderICD.json</em> file with the following content:
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<div>{</div>
+<div>    "file_format_version" : "1.0.0",</div>
+<div>    "ICD": {</div>
+<div>        "library_path": "<span style="color: #e67e23;"><strong>{ABSOLUTE_PATH_TO}</strong></span>/libvk_swiftshader.so",</div>
+<div>        "api_version" : "1.0.0"</div>
+<div>    }</div>
+<div>}</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Run Godot using following command (executable name may vary depending on build config):
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<div>
+<div>VK_ICD_FILENAMES=./SwiftShaderICD.json ./godot.linuxbsd.tools.64</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
             ]]>
         </content>
     </entry>
