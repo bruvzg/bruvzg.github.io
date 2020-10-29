@@ -3,7 +3,7 @@
     <title>bruvzg.github.io</title>
     <link href="https://bruvzg.github.io/feed.xml" rel="self" />
     <link href="https://bruvzg.github.io" />
-    <updated>2020-10-28T12:45:00+02:00</updated>
+    <updated>2020-10-29T13:40:15+02:00</updated>
     <author>
         <name>bruvzg</name>
     </author>
@@ -19,16 +19,16 @@
             <category term="Godot"/>
             <category term="CTL"/>
 
-        <updated>2020-10-28T12:45:00+02:00</updated>
+        <updated>2020-10-29T13:40:15+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://bruvzg.github.io/media/posts/4/ctl_part2_title_image-2.png" alt="" />
+                        <img src="https://bruvzg.github.io/media/posts/4/Screenshot-2020-10-29-at-13.37.53.png" alt="" />
                     Changes to the Godot Font and Theme:Since font handling was moved to TextServer, some substantial changes were made to the Godot Font and related classes: BitmapFont, DynamicFont and DynacmicFontData were removed and replaced with universal Font and FontData (which are backed by TextServer), this provides&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://bruvzg.github.io/media/posts/4/ctl_part2_title_image-2.png" alt="" />
+                    <img src="https://bruvzg.github.io/media/posts/4/Screenshot-2020-10-29-at-13.37.53.png" alt="" />
                 <h2>Changes to the Godot <em>Font</em> and <em>Theme</em>:</h2>
 <p>Since font handling was moved to TextServer, some substantial changes were made to the Godot <em><strong>Font</strong></em> and related classes:</p>
 <p><em><strong>BitmapFont</strong></em>, <em><strong>DynamicFont</strong></em> and <em><strong>DynacmicFontData</strong></em> were removed and replaced with universal <em><strong>Font</strong></em> and <em><strong>FontData</strong></em> (which are backed by <strong><em>TextServer</em></strong>), this provides cleaner font fallback/substitution and possibility for custom text servers to expose different types of fonts without interface changers, for example direct access to the system fonts.</p>
