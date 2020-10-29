@@ -3,7 +3,7 @@
     <title>bruvzg.github.io</title>
     <link href="https://bruvzg.github.io/feed.xml" rel="self" />
     <link href="https://bruvzg.github.io" />
-    <updated>2020-10-29T13:40:15+02:00</updated>
+    <updated>2020-10-29T14:06:25+02:00</updated>
     <author>
         <name>bruvzg</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="Godot"/>
             <category term="CTL"/>
 
-        <updated>2020-10-29T13:40:15+02:00</updated>
+        <updated>2020-10-29T14:06:25+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://bruvzg.github.io/media/posts/4/Screenshot-2020-10-29-at-13.37.53.png" alt="" />
@@ -52,10 +52,10 @@
 <li> Many Latin fonts have limited set of Greek characters for use in scientific texts (and such fonts usually have Greek script support flag set in the <em><strong>OS2</strong></em> table), but it's not always enough to display Greek text. Adding a separate font with full Greek support, and disabling Greek support in the main font will prevent TextServer from mixing characters form different fonts.
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-columns="2">
 <figure class="gallery__item"><a href="https://bruvzg.github.io/media/posts/4/gallery/Screenshot-2020-10-22-at-13.11.36.png" data-size="262x122"><img loading="lazy" src="https://bruvzg.github.io/media/posts/4/gallery/Screenshot-2020-10-22-at-13.11.36-thumbnail.png" alt="" width="262" height="122"></a>
-<figcaption>Incorrect font used "μ"</figcaption>
+<figcaption>Incorrect font used for "μ"</figcaption>
 </figure>
 <figure class="gallery__item"><a href="https://bruvzg.github.io/media/posts/4/gallery/Screenshot-2020-10-22-at-13.13.31.png" data-size="262x122"><img loading="lazy" src="https://bruvzg.github.io/media/posts/4/gallery/Screenshot-2020-10-22-at-13.13.31-thumbnail.png" alt="" width="262" height="122"></a>
-<figcaption>Correct font used "μ"</figcaption>
+<figcaption>Correct font used for "μ"</figcaption>
 </figure>
 </div></div>
 </li>
@@ -69,7 +69,7 @@
 <p class="align-left">Additional new <em><strong>Font</strong></em> and <em><strong>TextServer</strong></em>'s BiDi and shaping features can work with variable fonts (see <a href="https://github.com/godotengine/godot/pull/43030" target="_blank" rel="noopener noreferrer">https://github.com/godotengine/godot/pull/43030</a> for variable font support PR):</p>
 <p><video loading="lazy" width="660" height="356" style="display: block; margin: 0 auto;" id="test-video" class="video-js" controls="controls" preload="auto" data-setup="{}"><source src="media/files/var_fonts.mp4" type="video/mp4" /></video></p>
 <p>Constant and functions to control font size were added to the <em><strong>Theme,</strong></em> <em><strong>Control,</strong> </em>and <em><strong>Window </strong></em>classes:</p>
-<p><code>Control</code> and <code>Window</code> functions <code>add_theme_font_size_override</code>, <code>get_theme_font_size</code>, <code>has_theme_font_size</code>, <code>has_theme_font_size_override</code> and <code>Theme</code> functions: <code>clear_font_size</code>, <code>get_font_size</code>, <code>get_font_size_list</code>, <code>has_font_size</code>, <code>set_font_size</code><br>Control font size in the similar manner to existing function for the <code>Font</code>, value <code>-1</code> can be used as unset/default (have the same effect as <code>null</code> for the font).</p>
+<p><code>Control</code> and <code>Window</code> functions <code>add_theme_font_size_override</code>, <code>get_theme_font_size</code>, <code>has_theme_font_size</code>, <code>has_theme_font_size_override</code> and <code>Theme</code> functions: <code>clear_font_size</code>, <code>get_font_size</code>, <code>get_font_size_list</code>, <code>has_font_size</code>, <code>set_font_size</code> to control font size in the similar manner to existing function for the <code>Font</code>, value <code>-1</code> can be used as unset/default (have the same effect as <code>null</code> for the font).</p>
 <h2>UI mirroring:</h2>
 <p>To ensure the content is easy to understand, user interface for the right-to-left written languages should flow from right-to-left. UI "mirroring" provides a convenient way to achieve this without designing separate interfaces for the RTL and LTR languages.</p>
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-columns="2">
@@ -128,7 +128,6 @@
 <h2>Additional resources:</h2>
 <div>
 <ul>
-<li>What’s the difference between UI ‘Flipping’ and UI ‘Mirroring’? -<a href="https://docs.microsoft.com/en-us/archive/blogs/office_global_experience/qa-whats-the-difference-between-ui-flipping-and-ui-mirroring" target="_blank" rel="noopener noreferrer">https://docs.microsoft.com/en-us/archive/blogs/office_global_experience/qa-whats-the-difference-between-ui-flipping-and-ui-mirroring</a></li>
 <li><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Design your app for bidirectional text - </span><a href="https://docs.microsoft.com/en-us/windows/uwp/design/globalizing/design-for-bidi-text" target="_blank" rel="noopener noreferrer" style="font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">https://docs.microsoft.com/en-us/windows/uwp/design/globalizing/design-for-bidi-text</a></li>
 <li>Mozilla RTL guidelines - <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/RTL_Guidelines" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/RTL_Guidelines</a></li>
 </ul>
