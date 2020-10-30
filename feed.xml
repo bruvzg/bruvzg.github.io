@@ -3,7 +3,7 @@
     <title>bruvzg.github.io</title>
     <link href="https://bruvzg.github.io/feed.xml" rel="self" />
     <link href="https://bruvzg.github.io" />
-    <updated>2020-10-29T14:06:25+02:00</updated>
+    <updated>2020-10-30T23:52:48+02:00</updated>
     <author>
         <name>bruvzg</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="Godot"/>
             <category term="CTL"/>
 
-        <updated>2020-10-29T14:06:25+02:00</updated>
+        <updated>2020-10-30T23:52:48+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://bruvzg.github.io/media/posts/4/Screenshot-2020-10-29-at-13.37.53.png" alt="" />
@@ -60,9 +60,12 @@
 </div></div>
 </li>
 <li>TrueType/OpenType font tables do not have flags for rare/ancient scripts (e.g. Egyptian hieroglyphs), enabling script support manually will speed up font substitution.</li>
-<li>Some languages use the same script, but different font styles (e.g. <a href="https://en.wikipedia.org/wiki/Kufic" title="Kufic">Kufic</a>, Naskh and <span class="js-about-item-abstr">Nastaʼlīq writing styles preferred for writing different Arabic languages/ in different regions</span>), setting language overrides allow to seamlessly use the same font stack for the text in different languages and get desired style.<br>
+<li>Some languages use the same script, but different font styles (e.g. <a href="https://en.wikipedia.org/wiki/Kufic" title="Kufic">Kufic</a>, Naskh and <span class="js-about-item-abstr">Nastaʼlīq writing styles preferred for writing different Arabic languages/ in different regions and CJK variants - Traditional Chinese, Simplified Chinese, Japanese, and Korean</span>), setting language overrides allow to seamlessly use the same font stack for the text in different languages and get desired style.<br>
 <figure class="post__image post__image--center" ><img loading="lazy" style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://bruvzg.github.io/media/posts/4/Screenshot-2020-10-22-at-13.37.57.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/4/responsive/Screenshot-2020-10-22-at-13.37.57-xs.png 300w ,https://bruvzg.github.io/media/posts/4/responsive/Screenshot-2020-10-22-at-13.37.57-sm.png 480w ,https://bruvzg.github.io/media/posts/4/responsive/Screenshot-2020-10-22-at-13.37.57-md.png 768w ,https://bruvzg.github.io/media/posts/4/responsive/Screenshot-2020-10-22-at-13.37.57-lg.png 1024w ,https://bruvzg.github.io/media/posts/4/responsive/Screenshot-2020-10-22-at-13.37.57-xl.png 1360w ,https://bruvzg.github.io/media/posts/4/responsive/Screenshot-2020-10-22-at-13.37.57-2xl.png 1600w"  alt="Labels with &quot;language&quot; property set using the same &quot;Font&quot; instance." width="240" height="260">
-<figcaption >Labels with "language" property set, using the same "Font" instance.</figcaption>
+<figcaption >"Label"s with "language" property set, using the same "Font" instance.</figcaption>
+</figure>
+<figure class="post__image post__image--center" ><img loading="lazy" src="https://bruvzg.github.io/media/posts/4/cjk_variants.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/4/responsive/cjk_variants-xs.png 300w ,https://bruvzg.github.io/media/posts/4/responsive/cjk_variants-sm.png 480w ,https://bruvzg.github.io/media/posts/4/responsive/cjk_variants-md.png 768w ,https://bruvzg.github.io/media/posts/4/responsive/cjk_variants-lg.png 1024w ,https://bruvzg.github.io/media/posts/4/responsive/cjk_variants-xl.png 1360w ,https://bruvzg.github.io/media/posts/4/responsive/cjk_variants-2xl.png 1600w"  alt="CJK variants, &quot;Label&quot; using same font instance." width="590" height="472">
+<figcaption >CJK variants, "Label"s using same font instance.</figcaption>
 </figure>
 </li>
 </ol>

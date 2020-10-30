@@ -26,7 +26,7 @@
 </url>
 <url>
 <loc>https://bruvzg.github.io/complex-text-layouts-progress-report-2.html</loc>
-<lastmod>2020-10-29T14:06:25+02:00</lastmod>
+<lastmod>2020-10-30T23:52:48+02:00</lastmod>
 <image:image>
 <image:loc>https://bruvzg.github.io/media/posts/4/Screenshot-2020-10-29-at-13.37.53.png</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -42,6 +42,10 @@
 <image:image>
 <image:loc>https://bruvzg.github.io/media/posts/4/Screenshot-2020-10-22-at-13.37.57.png</image:loc>
 <image:title><![CDATA[Labels with &quot;language&quot; property set using the same &quot;Font&quot; instance.]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://bruvzg.github.io/media/posts/4/cjk_variants.png</image:loc>
+<image:title><![CDATA[CJK variants, &quot;Label&quot; using same font instance.]]></image:title>
 </image:image>
 <image:image>
 <image:loc>https://bruvzg.github.io/media/posts/4/gallery/ui_mirror1-thumbnail.png</image:loc>
