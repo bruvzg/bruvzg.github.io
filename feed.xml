@@ -3,7 +3,7 @@
     <title>bruvzg.github.io</title>
     <link href="https://bruvzg.github.io/feed.xml" rel="self" />
     <link href="https://bruvzg.github.io" />
-    <updated>2020-10-30T23:52:48+02:00</updated>
+    <updated>2020-11-02T11:44:41+02:00</updated>
     <author>
         <name>bruvzg</name>
     </author>
@@ -19,17 +19,17 @@
             <category term="Godot"/>
             <category term="CTL"/>
 
-        <updated>2020-10-30T23:52:48+02:00</updated>
+        <updated>2020-11-02T11:44:41+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://bruvzg.github.io/media/posts/4/Screenshot-2020-10-29-at-13.37.53.png" alt="" />
-                    Changes to the Godot Font and Theme:Since font handling was moved to TextServer, some substantial changes were made to the Godot Font and related classes: BitmapFont, DynamicFont and DynacmicFontData were removed and replaced with universal Font and FontData (which are backed by TextServer), this provides&hellip;
+                    Changes to the Godot Font:Since font handling was moved to TextServer, some substantial changes were made to the Godot Font and related classes: BitmapFont, DynamicFont and DynacmicFontData were removed and replaced with universal Font and FontData (which are backed by TextServer), this provides cleaner font&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://bruvzg.github.io/media/posts/4/Screenshot-2020-10-29-at-13.37.53.png" alt="" />
-                <h2>Changes to the Godot <em>Font</em> and <em>Theme</em>:</h2>
+                <h2>Changes to the Godot <em>Font</em>:</h2>
 <p>Since font handling was moved to TextServer, some substantial changes were made to the Godot <em><strong>Font</strong></em> and related classes:</p>
 <p><em><strong>BitmapFont</strong></em>, <em><strong>DynamicFont</strong></em> and <em><strong>DynacmicFontData</strong></em> were removed and replaced with universal <em><strong>Font</strong></em> and <em><strong>FontData</strong></em> (which are backed by <strong><em>TextServer</em></strong>), this provides cleaner font fallback/substitution and possibility for custom text servers to expose different types of fonts without interface changers, for example direct access to the system fonts.</p>
 <p>New <strong><em>Font </em></strong>class provides new functions to draw and measure multiline text, and apply alignment.</p>
@@ -94,7 +94,7 @@
 <li>Uses mirrored order of the internal control elements (e.g. <em><strong>OptionButton</strong></em> dropdown button, checkbox alignment, <em><strong>List</strong></em> column order, <em><strong>Tree</strong></em> item icons and connecting line alignment, e.t.c.), in some cases mirrored controls use separate theme styles.</li>
 <li>Coordinate system is not mirrored, and non-UI nodes (sprites, e.t.c) are not affected.</li>
 </ul>
-<h2>Structured text BiDi override:</h2>
+<h2>BiDi override for the structured text:</h2>
 <p>Unicode BiDi algorithm is designed to work with natural text and it's incapable of handling text with the higher level order, like file names, URIs, email addresses, regular expressions or source code.</p>
 <p><code>structured_text_bidi_override</code> property and <code>_structured_text_parser</code> callback is added to the all controls with a text.</p>
 <figure class="post__image post__image--center" ><img loading="lazy" src="https://bruvzg.github.io/media/posts/4/bidi_override.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/4/responsive/bidi_override-xs.png 300w ,https://bruvzg.github.io/media/posts/4/responsive/bidi_override-sm.png 480w ,https://bruvzg.github.io/media/posts/4/responsive/bidi_override-md.png 768w ,https://bruvzg.github.io/media/posts/4/responsive/bidi_override-lg.png 1024w ,https://bruvzg.github.io/media/posts/4/responsive/bidi_override-xl.png 1360w ,https://bruvzg.github.io/media/posts/4/responsive/bidi_override-2xl.png 1600w"  alt="" width="875" height="132">
@@ -109,7 +109,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Other changes to Godot controls:</h2>
+<h2>Other changes to the Godot controls:</h2>
 <p>To control BiDi and font related features, all controls have the following properties added:</p>
 <p><code>language</code> property (only for controls with text):<br>Overrides locale for the node: controls language specific line breaking rules, OpenType localized form, shaping, and font substitution.</p>
 <figure class="post__image post__image--center" ><img loading="lazy" src="https://bruvzg.github.io/media/posts/4/95047195-556b2380-06ee-11eb-90fa-c822a5389b28.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/4/responsive/95047195-556b2380-06ee-11eb-90fa-c822a5389b28-xs.png 300w ,https://bruvzg.github.io/media/posts/4/responsive/95047195-556b2380-06ee-11eb-90fa-c822a5389b28-sm.png 480w ,https://bruvzg.github.io/media/posts/4/responsive/95047195-556b2380-06ee-11eb-90fa-c822a5389b28-md.png 768w ,https://bruvzg.github.io/media/posts/4/responsive/95047195-556b2380-06ee-11eb-90fa-c822a5389b28-lg.png 1024w ,https://bruvzg.github.io/media/posts/4/responsive/95047195-556b2380-06ee-11eb-90fa-c822a5389b28-xl.png 1360w ,https://bruvzg.github.io/media/posts/4/responsive/95047195-556b2380-06ee-11eb-90fa-c822a5389b28-2xl.png 1600w"  alt="" width="1306" height="540">
