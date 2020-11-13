@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://bruvzg.github.io/sitemap.xml

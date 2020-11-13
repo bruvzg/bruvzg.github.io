@@ -3,7 +3,7 @@
     <title>bruvzg.github.io</title>
     <link href="https://bruvzg.github.io/feed.xml" rel="self" />
     <link href="https://bruvzg.github.io" />
-    <updated>2020-11-10T23:28:03+02:00</updated>
+    <updated>2020-11-13T20:57:44+02:00</updated>
     <author>
         <name>bruvzg</name>
     </author>
@@ -157,10 +157,10 @@
         <id>https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html</id>
             <category term="Godot"/>
 
-        <updated>2020-10-16T12:26:28+03:00</updated>
+        <updated>2020-11-13T20:57:44+02:00</updated>
             <summary>
                 <![CDATA[
-                    Download SwiftShader source - https://swiftshader.googlesource.com/SwiftShader/git clone https://swiftshader.googlesource.com/SwiftShader Download apply following patch to the SwiftShader source to bump descriptor limit - pathc_vm_vlk_swiftshader.diffgit apply pathc_vm_vlk_swiftshader.diffBuild SwiftShader ICD as described in https://swiftshader.googlesource.com/SwiftShader/#buildingDownload master branch of Godot - https://github.com/godotengine/godotgit clone https://github.com/godotengine/godot.gitDownload apply following patch to Godot source to disable&hellip;
+                    Download SwiftShader source - https://swiftshader.googlesource.com/SwiftShader/git clone https://swiftshader.googlesource.com/SwiftShader Download apply following patch to the SwiftShader source to bump descriptor limit - patch_vm_vlk_swiftshader.diffgit apply patch_vm_vlk_swiftshader.diffBuild SwiftShader ICD as described in https://swiftshader.googlesource.com/SwiftShader/#buildingDownload master branch of Godot - https://github.com/godotengine/godotgit clone https://github.com/godotengine/godot.gitDownload apply following patch to Godot source to disable&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -175,11 +175,11 @@
 </tbody>
 </table>
 <br><a href="https://swiftshader.googlesource.com/SwiftShader/" target="_blank" rel="noopener noreferrer"></a></li>
-<li>Download apply following patch to the  SwiftShader source to bump descriptor limit - <a href="https://bruvzg.github.io/media/files/patch_vm_vlk_swiftshader.diff" target="_blank" rel="noopener noreferrer">pathc_vm_vlk_swiftshader.diff</a>
+<li>Download apply following patch to the  SwiftShader source to bump descriptor limit - <a href="https://bruvzg.github.io/media/files/patch_vm_vlk_swiftshader.diff" target="_blank" rel="noopener noreferrer">patch_vm_vlk_swiftshader.diff</a>
 <table style="border-collapse: collapse; width: 100%;" border="1">
 <tbody>
 <tr>
-<td style="width: 100%;">git apply pathc_vm_vlk_swiftshader.diff</td>
+<td style="width: 100%;">git apply patch_vm_vlk_swiftshader.diff</td>
 </tr>
 </tbody>
 </table>
