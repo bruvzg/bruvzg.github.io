@@ -1,11 +1,161 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Author: bruvzg - bruvzg.github.io</title><meta name="robots" content="noindex, follow"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="alternate" type="application/atom+xml" href="https://bruvzg.github.io/feed.xml"><link rel="alternate" type="application/json" href="https://bruvzg.github.io/feed.json"><meta property="og:title" content="bruvzg"><meta property="og:image" content="https://bruvzg.github.io/media/website/7645687.png"><meta property="og:site_name" content="bruvzg.github.io"><meta property="og:description" content=""><meta property="og:url" content="https://bruvzg.github.io/authors/bruvzg/"><meta property="og:type" content="website"><style>:root{--body-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--heading-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--logo-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--menu-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}</style><link href="assets/css/video-js.min.css" rel="stylesheet"><script src="assets/js/video.min.js"></script><link rel="stylesheet" href="https://bruvzg.github.io/assets/css/style.css?v=4f1f64d84bd90c869fde9a0e2b952290"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"bruvzg.github.io","logo":"https://bruvzg.github.io/media/website/7645687.png","url":"https://bruvzg.github.io/"}</script></head><body><div class="site-container"><header class="top" id="js-header"><a class="logo" href="https://bruvzg.github.io/"><img src="https://bruvzg.github.io/media/website/7645687.png" alt="bruvzg.github.io"></a></header><main><div class="hero"><header class="hero__content"><div class="wrapper"><h1>bruvzg <sup>(5)</sup></h1></div></header></div><div class="feed"><article class="feed__item"><header class="wrapper"><div class="feed__meta"><time datetime="2020-10-28T12:45" class="feed__date">October 28, 2020</time></div><h2><a href="https://bruvzg.github.io/complex-text-layouts-progress-report-2.html" class="invert">Complex text layouts progress report #2:</a></h2></header><div class="wrapper"><p>Changes to the Godot Font:Since font handling was moved to TextServer, some substantial changes were made to the Godot Font and related classes: BitmapFont, DynamicFont and DynacmicFontData were removed and replaced with universal Font and FontData resource which are backed by TextServer. This provides cleaner&hellip;</p></div></article><article class="feed__item"><header class="wrapper"><div class="feed__meta"><time datetime="2020-10-14T13:03" class="feed__date">October 14, 2020</time></div><h2><a href="https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html" class="invert">Using Godot with SwiftShader Vulkan software emulation</a></h2></header><div class="wrapper"><p>Download SwiftShader source - https://swiftshader.googlesource.com/SwiftShader/git clone https://swiftshader.googlesource.com/SwiftShader Download apply following patch to the SwiftShader source to bump descriptor limit - patch_vm_vlk_swiftshader.diffgit apply patch_vm_vlk_swiftshader.diffBuild SwiftShader ICD as described in https://swiftshader.googlesource.com/SwiftShader/#buildingDownload master branch of Godot - https://github.com/godotengine/godotgit clone https://github.com/godotengine/godot.gitDownload apply following patch to Godot source to disable&hellip;</p></div></article><article class="feed__item"><header class="wrapper"><div class="feed__meta"><time datetime="2020-10-14T10:51" class="feed__date">October 14, 2020</time></div><h2><a href="https://bruvzg.github.io/complex-text-layouts-progress-report-1.html" class="invert">Complex text layouts progress report #1:</a></h2></header><div class="wrapper"><p>Introduction:Currently, text display in Godot engine is extremely limited, text is drawn character-by-character, left-to-right without kerning and support for any other font features. Godot is incapable of correctly displaying text in the languages that are written right-to-left (e.g. Arabic, Hebrew), have context-sensitive characters (e.g. Arabic&hellip;</p></div></article><article class="feed__item"><header class="wrapper"><div class="feed__meta"><time datetime="2019-11-13T12:00" class="feed__date">November 13, 2019</time></div><h2><a href="https://bruvzg.github.io/godot-re-tools.html" class="invert">Godot RE Tools</a></h2></header><div class="wrapper"><p>Godot reverse engineering tools: Source code/Download</p></div></article><article class="feed__item"><header class="wrapper"><div class="feed__meta"><time datetime="2019-11-13T12:00" class="feed__date">November 13, 2019</time></div><h2><a href="https://bruvzg.github.io/godot-text-to-speech-module.html" class="invert">Godot Text-to-Speech Module</a></h2></header><div class="wrapper"><p>Source code/Download</p></div></article></div></main><footer class="footer"><div class="footer__copyright"><p><a href="https://github.com/bruvzg" target="_blank" rel="noopener">GitHub</a></p><p>Powered by <a href="https://getpublii.com" target="_blank" rel="nofollow noopener">Publii Static CMS</a></p></div><button class="footer__bttop js-footer__bttop" aria-label="Back to top"><svg><title>Back to top</title><use xlink:href="https://bruvzg.github.io/assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script>window.publiiThemeMenuConfig = {    
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Author: bruvzg - bruvzg.github.io</title>
+        
+        <meta name="robots" content="noindex, follow" /> 
+        <meta name="generator" content="Publii Open-Source CMS for Static Site" />
+        
+        
+        <link rel="alternate" type="application/atom+xml" href="https://bruvzg.github.io/feed.xml" />
+<link rel="alternate" type="application/json" href="https://bruvzg.github.io/feed.json" />
+
+        <meta property="og:title" content="bruvzg" /><meta property="og:image" content="https://bruvzg.github.io/media/website/7645687.png"/><meta property="og:site_name" content="bruvzg.github.io" /><meta property="og:description" content="" /><meta property="og:url" content="https://bruvzg.github.io/authors/bruvzg/" /><meta property="og:type" content="website" />
+	        <link rel="shortcut icon" href="https://bruvzg.github.io/media/website/7645687-xs.png" type="image/png" />
+        <style>:root{--body-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--heading-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--logo-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--menu-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}</style>
+        <link rel="stylesheet" href="https://bruvzg.github.io/assets/css/video-js.min.css?v=f73663804f2a86a102f0cd4f059e7e79">
+        <link rel="stylesheet" href="https://bruvzg.github.io/assets/css/style.css?v=4814009928b3f424c76113c8a5f4519c">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"bruvzg.github.io","logo":"https://bruvzg.github.io/media/website/7645687.png","url":"https://bruvzg.github.io/"}</script>
+        
+        
+    </head>
+    <body>
+        <div class="site-container">
+   <header class="top" id="js-header">
+      <a class="logo" href="https://bruvzg.github.io/">
+            <img src="https://bruvzg.github.io/media/website/7645687.png" alt="bruvzg.github.io">
+      </a>
+   </header>
+<main>
+      <div class="hero author">
+         <header class="hero__content">
+            <div class="wrapper">          
+               <h1>
+                  bruvzg
+                  <sup>(5)</sup>
+               </h1>
+            </div>
+         </header>
+      </div>
+   <div class="feed">
+         <article class="feed__item">
+            <header class="wrapper">
+                  <div class="feed__meta">
+                        <time datetime="2020-10-28T12:45" class="feed__date">
+                              October 28, 2020
+                        </time>
+                  </div>
+               <h2>
+                  <a href="https://bruvzg.github.io/complex-text-layouts-progress-report-2.html" class="invert">
+                     Complex text layouts progress report #2:
+                  </a>
+               </h2>
+            </header>
+            <div class="wrapper">
+                  <p>Changes to the Godot Font:Since font handling was moved to TextServer, some substantial changes were made to the Godot Font and related classes: BitmapFont, DynamicFont and DynacmicFontData were removed and replaced with universal Font and FontData resource which are backed by TextServer. This provides cleaner&hellip;</p>
+            </div>
+         </article>
+         <article class="feed__item">
+            <header class="wrapper">
+                  <div class="feed__meta">
+                        <time datetime="2020-10-14T13:03" class="feed__date">
+                              October 14, 2020
+                        </time>
+                  </div>
+               <h2>
+                  <a href="https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html" class="invert">
+                     Using Godot with SwiftShader Vulkan software emulation
+                  </a>
+               </h2>
+            </header>
+            <div class="wrapper">
+                  <p>Download SwiftShader source - https://swiftshader.googlesource.com/SwiftShader/git clone https://swiftshader.googlesource.com/SwiftShader Download apply following patch to the SwiftShader source to bump descriptor limit - patch_vm_vlk_swiftshader.diffgit apply patch_vm_vlk_swiftshader.diffBuild SwiftShader ICD as described in https://swiftshader.googlesource.com/SwiftShader/#buildingDownload master branch of Godot - https://github.com/godotengine/godotgit clone https://github.com/godotengine/godot.gitDownload apply following patch to Godot source to disable&hellip;</p>
+            </div>
+         </article>
+         <article class="feed__item">
+            <header class="wrapper">
+                  <div class="feed__meta">
+                        <time datetime="2020-10-14T10:51" class="feed__date">
+                              October 14, 2020
+                        </time>
+                  </div>
+               <h2>
+                  <a href="https://bruvzg.github.io/complex-text-layouts-progress-report-1.html" class="invert">
+                     Complex text layouts progress report #1:
+                  </a>
+               </h2>
+            </header>
+            <div class="wrapper">
+                  <p>Introduction:Currently, text display in Godot engine is extremely limited, text is drawn character-by-character, left-to-right without kerning and support for any other font features. Godot is incapable of correctly displaying text in the languages that are written right-to-left (e.g. Arabic, Hebrew), have context-sensitive characters (e.g. Arabic&hellip;</p>
+            </div>
+         </article>
+         <article class="feed__item">
+            <header class="wrapper">
+                  <div class="feed__meta">
+                        <time datetime="2019-11-13T12:00" class="feed__date">
+                              November 13, 2019
+                        </time>
+                  </div>
+               <h2>
+                  <a href="https://bruvzg.github.io/godot-re-tools.html" class="invert">
+                     Godot RE Tools
+                  </a>
+               </h2>
+            </header>
+            <div class="wrapper">
+                  <p>Godot reverse engineering tools: Source code/Download</p>
+            </div>
+         </article>
+         <article class="feed__item">
+            <header class="wrapper">
+                  <div class="feed__meta">
+                        <time datetime="2019-11-13T12:00" class="feed__date">
+                              November 13, 2019
+                        </time>
+                  </div>
+               <h2>
+                  <a href="https://bruvzg.github.io/godot-text-to-speech-module.html" class="invert">
+                     Godot Text-to-Speech Module
+                  </a>
+               </h2>
+            </header>
+            <div class="wrapper">
+                  <p>Source code/Download</p>
+            </div>
+         </article>
+   </div>
+</main>
+<footer class="footer">
+        <div class="footer__copyright">
+            <p><a href="https://github.com/bruvzg" target="_blank" rel="noopener">GitHub</a></p>
+<p>Powered by <a href="https://getpublii.com" target="_blank" rel="nofollow noopener">Publii Static CMS</a></p>
+        </div>
+       <button class="footer__bttop js-footer__bttop" aria-label="Back to top"> 
+           <svg>
+               <title>Back to top</title>
+               <use xlink:href="https://bruvzg.github.io/assets/svg/svg-map.svg#toparrow" />
+           </svg>
+       </button>   
+</footer>
+</div>
+
+<script>
+   window.publiiThemeMenuConfig = {    
         mobileMenuMode: 'sidebar',
         animationSpeed: 300,
         submenuWidth: 'auto',
         doubleClickTime: 500,
         mobileMenuExpandableSubmenus: true, 
         relatedContainerForOverlayMenuSelector: '.top',
-   };</script><script defer="defer" src="https://bruvzg.github.io/assets/js/scripts.min.js?v=f4c4d35432d0e17d212f2fae4e0f8247"></script><script>var images = document.querySelectorAll('img[loading]');
+   };
+</script>
+<script defer src="https://bruvzg.github.io/assets/js/video.min.js?v=539b0abb9e33afa3da8f1fe307fcb05f></script>
+<script defer src="https://bruvzg.github.io/assets/js/scripts.min.js?v=f4c4d35432d0e17d212f2fae4e0f8247"></script>
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
 
         for (var i = 0; i < images.length; i++) {
             if (images[i].complete) {
@@ -15,4 +165,9 @@
                     this.classList.add('is-loaded');
                 }, false);
             }
-        }</script></body></html>
+        }
+    </script>
+
+
+</body>
+</html>
