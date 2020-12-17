@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Complex text layouts progress report #3 - bruvzg.github.io </title>
+        <meta name="description" content="RichTextEdit:ParagraphAlignment tags ([left], [center], [right], [fill]) are combined with base direction, structured text override and language paragraph options to the single [p] tag. Standalone alignment tags are still available for compatibility. [p align=x dir=rtl] Added support for setting cell background and border colors. Including alternating&hellip;" />
+         
+        <meta name="generator" content="Publii Open-Source CMS for Static Site" />
+        <link rel="canonical" href="https://bruvzg.github.io/complex-text-layouts-progress-report-3.html">
+        
+        <link rel="alternate" type="application/atom+xml" href="https://bruvzg.github.io/feed.xml" />
+<link rel="alternate" type="application/json" href="https://bruvzg.github.io/feed.json" />
+
+        <meta property="og:title" content="Complex text layouts progress report #3" /><meta property="og:image" content="https://bruvzg.github.io/media/website/7645687.png"/><meta property="og:site_name" content="bruvzg.github.io" /><meta property="og:description" content="RichTextEdit:ParagraphAlignment tags ([left], [center], [right], [fill]) are combined with base direction, structured text override and language paragraph options to the single [p] tag. Standalone alignment tags are still available for compatibility. [p align=x dir=rtl] Added support for setting cell background and border colors. Including alternating&hellip;" /><meta property="og:url" content="https://bruvzg.github.io/complex-text-layouts-progress-report-3.html" /><meta property="og:type" content="article" />
+	        <link rel="shortcut icon" href="https://bruvzg.github.io/media/website/7645687-xs.png" type="image/png" />
+        <style>:root{--body-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--heading-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--logo-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--menu-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}</style>
+        <link rel="stylesheet" href="https://bruvzg.github.io/assets/css/video-js.min.css?v=f73663804f2a86a102f0cd4f059e7e79">
+        <link rel="stylesheet" href="https://bruvzg.github.io/assets/css/style.css?v=4814009928b3f424c76113c8a5f4519c">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://bruvzg.github.io/complex-text-layouts-progress-report-3.html"},"headline":"Complex text layouts progress report #3","datePublished":"2020-12-04T11:40","dateModified":"2020-12-17T11:40","image":{"@type":"ImageObject","url":"https://bruvzg.github.io/media/website/7645687.png","height":400,"width":400},"description":"RichTextEdit:ParagraphAlignment tags ([left], [center], [right], [fill]) are combined with base direction, structured text override and language paragraph options to the single [p] tag. Standalone alignment tags are still available for compatibility. [p align=x dir=rtl] Added support for setting cell background and border colors. Including alternating&hellip;","author":{"@type":"Person","name":"bruvzg"},"publisher":{"@type":"Organization","name":"bruvzg","logo":{"@type":"ImageObject","url":"https://bruvzg.github.io/media/website/7645687.png","height":400,"width":400}}}</script>
+        
+        
+    </head>
+    <body>
+        <div class="site-container">
+   <header class="top" id="js-header">
+      <a class="logo" href="https://bruvzg.github.io/">
+            <img src="https://bruvzg.github.io/media/website/7645687.png" alt="bruvzg.github.io">
+      </a>
+   </header>
+<main>
+      <article class="post">
+         <div class="hero">
+             
+             
+            <header class="hero__content">
+               <div class="wrapper">
+                     <div class="post__meta">
+                        <time datetime="2020-12-04T11:40">
+                              December 4, 2020
+                        </time>
+                     </div>
+                  <h1>
+                     Complex text layouts progress report #3
+                  </h1>
+               </div>
+            </header>
+         </div>
+
+         <div class="wrapper post__entry">           
+            <h2>RichTextEdit:</h2>
+<h4>Paragraph</h4>
+<p>Alignment tags ([left], [center], [right], [fill]) are combined with base direction, structured text override and language paragraph options to the single [p] tag. Standalone alignment tags are still available for compatibility.</p>
+<p><code>[p align=x dir=rtl]</code></p>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 33.3333%;">align</td>
+<td style="width: 33.3333%;">left, center, right, fill</td>
+<td style="width: 33.3333%;">Text alignment.</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">dir or direction</td>
+<td style="width: 33.3333%;">ltr, rtl or auto</td>
+<td style="width: 33.3333%;">Base text writing direction.</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">lang or language</td>
+<td style="width: 33.3333%;">ISO language code</td>
+<td style="width: 33.3333%;">Text language</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">bidi_override</td>
+<td style="width: 33.3333%;">default, url, file, email, list, none, custom</td>
+<td style="width: 33.3333%;">Structured text BiDi override for the paragraph.</td>
+</tr>
+</tbody>
+</table>
+<h4>Tables</h4>
+<p>Added support for setting cell background and border colors. Including alternating odd/even row backgrounds. Table horizontal layout is mirrored for RTL paragraphs.</p>
+<p><span style="color: #000000;"><code><span style="font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">[cell bg=odd_color,even_color border=color]AAA[/cell]</span></code></span></p>
+<p>Additionally tables can be inlined into the text flow.</p>
+<figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/table.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/table-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/table-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/table-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/table-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/table-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/table-2xl.png 1600w"  alt="" width="662" height="164"></figure>
+<h4>Lists</h4>
+<p><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Added support for numbered and unnumbered lists (list tags existed before but were non functional).</span></p>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">[ol type=1]Item 1<br>Item 2<br>Item 3[/ol]</td>
+</tr>
+</tbody>
+</table>
+<p>Following list types are supported:</p>
+<ul>
+<li>Unnumbered lists ( <code>[ul]</code> ).</li>
+<li>Numbered lists ( <code>[ol]</code> ) using numbers <code>[1]</code> (supports localised numbering systems, e.g. east Arabic numerals, based on paragraph language)</li>
+<li>Numbered lists ( <code>[ol]</code> ) using Roman numerals: <code>[i] and [I]</code></li>
+<li>Numbered lists ( <code>[ol]</code> ) using Latin letters: <code>[a] and [A]</code>.</li>
+</ul>
+<figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/Screenshot-2020-12-17-at-10.00.26.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-17-at-10.00.26-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-17-at-10.00.26-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-17-at-10.00.26-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-17-at-10.00.26-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-17-at-10.00.26-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-17-at-10.00.26-2xl.png 1600w"  alt="" width="716" height="488"></figure>
+<h4>Images</h4>
+<p>Added support for image inline vertical alignment:</p>
+<p><code>[image align=top]</code></p>
+<figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/images.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/images-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/images-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/images-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/images-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/images-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/images-2xl.png 1600w"  alt="" width="444" height="234"></figure>
+<h4>Font and outline</h4>
+<p>Added tags to control font size and OpenType features and font outline:</p>
+<p><code>[font_size=36]</code></p>
+<p><code>[opentype_features=scap]</code></p>
+<p><code>[outline_color=red][outline_size=2]</code></p>
+<p>or combined to the single tag</p>
+<p><code>[font name=res://font.tres size=36 features=xxx]</code></p>
+<figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/font.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/font-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/font-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/font-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/font-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/font-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/font-2xl.png 1600w"  alt="" width="762" height="262"></figure>Control characters</p>
+<p>Unicode control character can be inserted to the text by inputing them directly (e.g. copy-pasting or using Godot input control context menu), or by using special tags (e.g. [rlm], [lrm], [zwnj]).</p>
+<h4>Dropcaps</h4>
+<p>Additionally, dropped capitals support is added to the RichTextLabel, dropcaps support same formatting options as the main text, and margins for precise placement control.</p>
+<figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/dc_margin.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/dc_margin-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/dc_margin-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/dc_margin-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/dc_margin-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/dc_margin-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/dc_margin-2xl.png 1600w"  alt="" width="654" height="320"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/dc_screenshot.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/dc_screenshot-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/dc_screenshot-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/dc_screenshot-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/dc_screenshot-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/dc_screenshot-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/dc_screenshot-2xl.png 1600w"  alt="" width="1592" height="824"></figure>
+<h2>Designing custom controls:</h2>
+<p>In addition to the Text Server interface and draw function in the Font class, TextLine and TextParagraph helper classes, which serve as the base for most Godot controls, are available for more convenient single and multiline text rendering and designing custom controls.</p>
+<p>TextLine and TextParagraph classes support following features.</p>
+<p>- Multiple fonts and font options, and multiple languages in the single line or paragraph. Spans of text with designated font and properties can be sequentially pushed to the text buffer.</p>
+<div>
+<div> </div>
+<div><code>add_string(text, font, font_size, opentype_features, language);</code></div>
+<div> </div>
+<div><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">- TextBuffer can embed user defined custom objects (e.g. images and tables, like RichTextLabel do) into the text flow. In the text object are represented as <code>length</code> object replacement characters, and follow all BiDi reordering rules.</span></div>
+</div>
+<p><code>add_object(key, size, inline_align, length);</code></p>
+<p>Final object position in the shaped text layout can be retrieved by using</p>
+<div>
+<div><code>get_object_rect(key)</code> function.</div>
+</div>
+<p>Both TextLine and TextParagraph provide direct access to the text server buffer RIDs to mix it usage with direct text server API calls.</p>
+<p>Text server buffers, TextLine and TextParagraph use lazy calculation model, no BiDi reordering, shaping, line/word breaking or and other text processing is done unless it's necessary to do it for the requested <code>get_</code> function call or buffer rendering. While layout text is immutable and can't be changed without redoing BiDi reordering and reshaping, layout size and alignment as well as embedded object sizes can be changed dynamically and done much faster than new buffer creation.</p>
+<h2>Limited vertical text support:</h2>
+<p>While Godot controls are designed to work with horizontal text only, Text Server and TextLine/TextParagraph have limited vertical text support as well. Vertical layout can be enabled by setting text buffer or helper class 'orientation' property.</p>
+<p>... cjk texts screenshot</p>
+<h2>Input:</h2>
+<p>Godot BiDi caret movement follows logical order of characters (right arrow always acts as forward direction), on the edge of RTL and LTR text two carets are displayed, primary caret  is determined base on last input direction (and can be switched manually using Ctrl/Cmd + ~). By default, all input except Backspace, which always deletes single character, moves caret over the whole graphemes (e.g. base character and combining diacritics), this behaviour can be changed by setting 'mid_grapheme_caret'</p>
+<p>.... screenshot (Ā: A + combining macron, Note: depending on OS and language, some characters can be entered as both combining characters and single character.)</p>
+<p>... screenshot of mid grapheme caret with T (ffi)</p>
+<p>Input controls have various BiDi options available for the used via context menu:</p>
+<p>... base direction, inserting control characters and viewing them</p>
+<p>... screenshot (menu + view ctrl)</p>
+<p>... caret and selection text server functions for custom controls</p>
+<p>All input controls fully support structured text BiDi overrides, which do not interfere with caret movement, do not affect contents of the underlaying raw string and unlike Unicode control characters can't be accidentally deleted by user.</p>
+<h2>Compatibility:</h2>
+<p>While there are breaking changes in the Font and Theme, existing 3.2 scenes can be loaded directly, some of the conversions will be done automatically:</p>
+<p>DynamicFont and BitmapFont are converted to the new unified Font resources, but font size will be lost.</p>
+<p>Font loading and text drawing function have to be converted manually:</p>
+<p>..font loading before/after for dynamic font (as diff)</p>
+<p>..font string draw before/after</p>
+<h2>ICU data, build options and export templates:</h2>
+<p>Full blown CTL support is slower and result in bigger binary size, since some game project do not need it, multiple compile options are available to control text server building.</p>
+<p>Following build options are available:</p>
+<div>
+<div><code>builtin_graphite</code>, <code>builtin_harfbuzz</code> and <span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"><code>builtin_icu</code> (default value: True) - If true, uses builtin version of the libraries instead of system copies.</span></div>
+<div> </div>
+<div>There are two text server implementations available by default:</div>
+<div>- ICU + HarfBuzz + SIL Graphite 2 based text server with will complex text layout support.</div>
+<div>- Fallback text server without CTL support, uses same API and provides roughly the same text rendering capabilities as in Godot 3.2.</div>
+<div> </div>
+<div>Text servers can be enabled/disabled by using following build flags:</div>
+<div>
+<div><code>module_text_server_adv_enabled</code>, <code>module_text_server_fb_enabled</code></div>
+<div>If editor/export template is built with multiple text servers, default one can be selected in Project Setting or by using <code>--text-driver Name</code> command line argument.</div>
+<div> </div>
+<div>In the runtime text server can be changed by using TextServerManager class, but doing so will render all existing fonts and text buffers to become invalid. It's user responsibility to free all such resource (including default theme fonts) before switching Text Server.</div>
+<div> </div>
+<div>Additional text servers can be implemented as C++ modules or GDNatvie libraries, loaded and used in the same way default servers are.</div>
+</div>
+</div>
+<p>Some language do not use spaces between words, and dictionary (or other type rule base word breaking data) is required for better line breaking, ICU provides such data but it's size can be substantial for smaller projects. To reduce export size, ICU data is not included by default, but in can be added at export and stored in the PCK archive. It's always embedded into the editor binaries. Also you can avoid necessity for ICU data at all and manually adding valid breaking points (inserting zero-width breaking spaces, which can be inserted from Godot input controls context menu).</p>
+<h2>Demos and docs:</h2>
+<p>-&gt; generic description and links to demos and tutorials</p>
+<h2><strong>Reference work:</strong></h2>
+<p>-&gt; pr links</p>            
+         </div>
+
+            <footer class="wrapper post__footer">
+
+                     <p class="post__last-updated">
+                        This article was updated on
+                           December 17, 2020
+                     </p>
+
+                     <ul class="post__tag">
+                           <li>
+                              <a href="https://bruvzg.github.io/ctl/">CTL</a>
+                           </li>
+                           <li>
+                              <a href="https://bruvzg.github.io/godot/">Godot</a>
+                           </li>
+                     </ul>
+
+
+            </footer>
+      </article>
+
+
+
+
+
+</main>
+<footer class="footer">
+        <div class="footer__copyright">
+            <p><a href="https://github.com/bruvzg" target="_blank" rel="noopener">GitHub</a></p>
+<p>Powered by <a href="https://getpublii.com" target="_blank" rel="nofollow noopener">Publii Static CMS</a></p>
+        </div>
+       <button class="footer__bttop js-footer__bttop" aria-label="Back to top"> 
+           <svg>
+               <title>Back to top</title>
+               <use xlink:href="https://bruvzg.github.io/assets/svg/svg-map.svg#toparrow" />
+           </svg>
+       </button>   
+</footer>
+</div>
+
+<script>
+   window.publiiThemeMenuConfig = {    
+        mobileMenuMode: 'sidebar',
+        animationSpeed: 300,
+        submenuWidth: 'auto',
+        doubleClickTime: 500,
+        mobileMenuExpandableSubmenus: true, 
+        relatedContainerForOverlayMenuSelector: '.top',
+   };
+</script>
+<script defer src="https://bruvzg.github.io/assets/js/video.min.js?v=539b0abb9e33afa3da8f1fe307fcb05f></script>
+<script defer src="https://bruvzg.github.io/assets/js/scripts.min.js?v=f4c4d35432d0e17d212f2fae4e0f8247"></script>
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
+
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }
+    </script>
+
+
+</body>
+</html>
