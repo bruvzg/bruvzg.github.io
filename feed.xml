@@ -3,7 +3,7 @@
     <title>bruvzg.github.io</title>
     <link href="https://bruvzg.github.io/feed.xml" rel="self" />
     <link href="https://bruvzg.github.io" />
-    <updated>2020-12-21T12:06:45+02:00</updated>
+    <updated>2020-12-21T12:20:42+02:00</updated>
     <author>
         <name>bruvzg</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="Godot"/>
             <category term="CTL"/>
 
-        <updated>2020-12-21T12:06:45+02:00</updated>
+        <updated>2020-12-21T12:20:42+02:00</updated>
             <summary>
                 <![CDATA[
                     Changes to the RichTextEdit control:ParagraphAlignment tags ([left], [center], [right], [fill]), base direction, structured text override and language paragraph options are combined to the single [p] tag. Standalone alignment tags are still available for compatibility. [p align=x dir=rtl] Support for setting cell background and border colors,&hellip;
@@ -113,17 +113,18 @@
 <p>... cjk texts screenshot</p>
 <h2>Input:</h2>
 <p>Godot BiDi caret movement follows logical order of characters (right arrow key always acts as movement forward). When the caret is located on the edge of RTL and LTR text segments two carets are displayed, each one indicating a position where newly inputted RTL and LTR characters will be displayed. Primary caret, which controls control scrolling, is determined based on the direction of the last inputted character (or can be switched manually, by using <code>Ctrl/Cmd + ~</code>).</p>
-<p>By default, all input keys except Backspace, which always deletes a single character, moves caret over the whole grapheme (e.g. base character and combining diacritics), this behavior can be changed by setting <code>mid_grapheme_caret</code> control property.</p>
-<p>.... screenshot (Ā: A + combining macron)</p>
-<p><em>Note: depending on OS and language and keyboard layout, same characters can be entered as combining characters and single character.</em></p>
-<p>... screenshot of mid grapheme caret with T (ffi)</p>
+<figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/Screenshot-2020-12-16-at-11.27.55.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-16-at-11.27.55-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-16-at-11.27.55-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-16-at-11.27.55-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-16-at-11.27.55-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-16-at-11.27.55-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-16-at-11.27.55-2xl.png 1600w"  alt="" width="602" height="66"></figure>
+<p>By default, all input keys except Backspace, which always deletes a single character, moves caret over the whole grapheme (e.g. base character and combining diacritics):<figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/Screenshot-2020-12-21-at-12.09.15.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.09.15-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.09.15-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.09.15-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.09.15-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.09.15-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.09.15-2xl.png 1600w"  alt="" width="433" height="227"></figure>
+<p>This behavior can be changed by setting <code>mid_grapheme_caret</code> control property:</p>
+<figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/Screenshot-2020-12-21-at-12.13.55.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.13.55-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.13.55-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.13.55-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.13.55-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.13.55-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.13.55-2xl.png 1600w"  alt="" width="342" height="70"></figure>
+<p><em>Note: depending on OS and language and keyboard layout, same characters can be entered as combining characters and single character. In case of single character input, both backspace and movement will affect the whole character.</em></p>
 <p>Input controls have various BiDi options available for the user via context menu:</p>
 <ul>
 <li>Base direction.</li>
 <li>Inserting control characters.</li>
 <li>Enabling and disabling display of control characters.</li>
 </ul>
-<p>... screenshot (menu + view ctrl)</p>
+<figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/Screenshot-2020-12-21-at-12.11.58.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.11.58-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.11.58-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.11.58-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.11.58-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.11.58-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.11.58-2xl.png 1600w"  alt="" width="1162" height="568"></figure>
 <p>For the custom controls, the text server provides functions to determine caret positions, selection bounding rectangles and hit testing:</p>
 <div>
 <div> </div>
