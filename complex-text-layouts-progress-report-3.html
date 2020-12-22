@@ -18,7 +18,7 @@
         <style>:root{--body-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--heading-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--logo-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--menu-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}</style>
         <link rel="stylesheet" href="https://bruvzg.github.io/assets/css/video-js.min.css?v=f73663804f2a86a102f0cd4f059e7e79">
         <link rel="stylesheet" href="https://bruvzg.github.io/assets/css/style.css?v=4814009928b3f424c76113c8a5f4519c">
-        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://bruvzg.github.io/complex-text-layouts-progress-report-3.html"},"headline":"Complex text layouts progress report #3","datePublished":"2020-12-17T11:49","dateModified":"2020-12-22T09:27","image":{"@type":"ImageObject","url":"https://bruvzg.github.io/media/website/7645687.png","height":400,"width":400},"description":"Changes to the RichTextEdit control:ParagraphAlignment tags ([left], [center], [right], [fill]), base direction, structured text override and language paragraph options are combined to the single [p] tag. Standalone alignment tags are still available for compatibility. [p align=x dir=rtl] Support for setting cell background and border colors,&hellip;","author":{"@type":"Person","name":"bruvzg"},"publisher":{"@type":"Organization","name":"bruvzg","logo":{"@type":"ImageObject","url":"https://bruvzg.github.io/media/website/7645687.png","height":400,"width":400}}}</script>
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://bruvzg.github.io/complex-text-layouts-progress-report-3.html"},"headline":"Complex text layouts progress report #3","datePublished":"2020-12-17T11:49","dateModified":"2020-12-22T09:45","image":{"@type":"ImageObject","url":"https://bruvzg.github.io/media/website/7645687.png","height":400,"width":400},"description":"Changes to the RichTextEdit control:ParagraphAlignment tags ([left], [center], [right], [fill]), base direction, structured text override and language paragraph options are combined to the single [p] tag. Standalone alignment tags are still available for compatibility. [p align=x dir=rtl] Support for setting cell background and border colors,&hellip;","author":{"@type":"Person","name":"bruvzg"},"publisher":{"@type":"Organization","name":"bruvzg","logo":{"@type":"ImageObject","url":"https://bruvzg.github.io/media/website/7645687.png","height":400,"width":400}}}</script>
         
         
     </head>
@@ -160,11 +160,11 @@
 <p>All input controls fully support structured text BiDi overrides, which do not interfere with caret movement, do not affect contents of the underlying raw string and unlike Unicode control characters can't be accidentally deleted by the user.</p>
 <h2>Compatibility:</h2>
 <p>While there are breaking changes in the <code>Font</code> and <code>Theme</code>, existing 3.2 scenes can be loaded directly, some of the conversions will be done automatically:</p>
-<p><code>DynamicFont</code> and BitmapFont are converted to the new unified Font resources, but font size will be lost, and should be re-added in the theme properties of the controls.</p>
+<p><code>DynamicFont</code> and <code>BitmapFont</code> resources are converted to the new unified <code>Font</code> resources, but font size will be lost, and should be re-added in the theme properties of the controls.</p>
 <p>Font loading and text drawing GDScript code should be changed manually:</p>
 <ul>
-<li>Font loading: <code>DynamicFont</code> → <code>Font</code>, <code>DynamicFontData</code> and <code>BitmapFont</code> → <code>FontData</code>, single list of data sources. </li>
-<li>Text / character drawing and size measurement functions: added new arguments for font size, outline and text alignment, as well as new function for drawing multiline text.</li>
+<li>Font loading: Change <code>DynamicFont</code> → <code>Font</code>, <code>DynamicFontData</code> and <code>BitmapFont</code> → <code>FontData</code>, use single list of data sources. </li>
+<li>Text / character drawing and size measurement functions: new arguments for font size, outline and text alignment were added, as well as new function for drawing multiline text.</li>
 </ul>
 <h2>ICU data, build options and export templates:</h2>
 <p>Full-blown CTL support is slower and results in the bigger binary size, since some game project do not need CTL at all, or text usage is very limited, multiple compile options are available to control text server building.</p>
@@ -176,13 +176,13 @@
 <li>Fallback text server without CTL support, it uses same text server API and provides roughly the same text rendering capabilities as in Godot 3.2.</li>
 </ul>
 <div> </div>
-<div>Text servers can be enabled/disabled by using following build flags:</div>
+<div>Text servers can be enabled/disabled by using following build options:</div>
 <div>
 <div><code>module_text_server_adv_enabled</code>, <code>module_text_server_fb_enabled</code></div>
 <div> </div>
 <div>If an editor or export template is built with the multiple text servers enabled, default one can be selected in Project Setting or by using <code>--text-driver Name</code> command line argument.</div>
 <div> </div>
-<div>In the runtime text server can be changed by using <code>TextServerManager</code> class, but doing so will render all existing fonts and text buffers to become invalid. It's the user's responsibility to free all such resource before switching Text Server.</div>
+<div>In the runtime text server can be changed by using <code>TextServerManager</code> class, but doing so will render all existing fonts and text buffers to become invalid. It's the user's responsibility to free all such resource before switching text server.</div>
 <div> </div>
 <div>Additional text servers can be implemented as C++ modules or GDNatvie libraries, and loaded / used in the same way default servers are.</div>
 </div>
