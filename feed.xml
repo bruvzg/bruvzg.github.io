@@ -3,7 +3,7 @@
     <title>bruvzg.github.io</title>
     <link href="https://bruvzg.github.io/feed.xml" rel="self" />
     <link href="https://bruvzg.github.io" />
-    <updated>2020-12-22T09:45:06+02:00</updated>
+    <updated>2020-12-28T10:21:07+02:00</updated>
     <author>
         <name>bruvzg</name>
     </author>
@@ -19,17 +19,17 @@
             <category term="Godot"/>
             <category term="CTL"/>
 
-        <updated>2020-12-22T09:45:06+02:00</updated>
+        <updated>2020-12-28T10:21:07+02:00</updated>
             <summary>
                 <![CDATA[
-                    Changes to the RichTextEdit control:ParagraphAlignment tags ([left], [center], [right], [fill]), base direction, structured text override and language paragraph options are combined to the single [p] tag. Standalone alignment tags are still available for compatibility. [p align=x dir=rtl] Support for setting cell background and border colors,&hellip;
+                    Changes to the RichTextLabel control:ParagraphExisting alignment tags ([left], [center], [right], [fill]), as well as new base direction, structured text override and language paragraph options are combined to the single [p] tag. Standalone alignment tags are still available for compatibility. [p align=x dir=rtl] Support for setting&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <h2>Changes to the <code>RichTextEdit</code> control:</h2>
+                <h2>Changes to the <code>RichTextLabel</code> control:</h2>
 <h4>Paragraph</h4>
-<p>Alignment tags (<code>[left]</code>, <code>[center]</code>, <code>[right]</code>, <code>[fill]</code>), base direction, structured text override and language paragraph options are combined to the single [p] tag. Standalone alignment tags are still available for compatibility.</p>
+<p>Existing alignment tags (<code>[left]</code>, <code>[center]</code>, <code>[right]</code>, <code>[fill]</code>),  as well as new base direction, structured text override and language paragraph options are combined to the single [p] tag. Standalone alignment tags are still available for compatibility.</p>
 <p><code>[p align=x dir=rtl]</code></p>
 <table style="border-collapse: collapse; width: 100%;" border="1">
 <tbody>
@@ -46,7 +46,7 @@
 <tr>
 <td style="width: 33.3333%;">lang or language</td>
 <td style="width: 33.3333%;">ISO language code</td>
-<td style="width: 33.3333%;">Text language</td>
+<td style="width: 33.3333%;">Text language.</td>
 </tr>
 <tr>
 <td style="width: 33.3333%;">bidi_override</td>
@@ -56,9 +56,9 @@
 </tbody>
 </table>
 <h4>Tables</h4>
-<p>Support for setting cell background and border colors, including alternating odd/even row background has been added to the table. Table horizontal layout is mirrored for RTL paragraphs.</p>
+<p>Support for setting cell padding, background and border colors, including alternating odd/even row background has been added to the table. Table horizontal layout is mirrored for RTL paragraphs.</p>
 <p><span style="color: #000000;"><code><span style="font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">[cell bg=odd_color,even_color border=color]AAA[/cell]</span></code></span></p>
-<p>Additionally, tables can be included into the text flow. Table opening and closing tags won't start a new line anymore.</p>
+<p>Additionally, tables can be directly included into the text flow. Table opening and closing tags won't start a new line anymore.</p>
 <figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/table.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/table-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/table-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/table-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/table-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/table-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/table-2xl.png 1600w"  alt="" width="662" height="164"></figure>
 <h4>Lists</h4>
 <p>Support for numbered and unnumbered lists (list tags existed before but were non-functional) has been added.</p>
@@ -109,10 +109,10 @@
 <p>Both <code>TextLine</code> and <code>TextParagraph</code> provide direct access to the text server buffer RIDs to mix it usage with direct text server API calls (e.g. accessing individual glyphs).</p>
 <p>Text server buffers, <code>TextLine</code> and <code>TextParagraph</code> use lazy calculation model. No BiDi reordering, shaping, line breaking or any other kind of text processing is done until it's necessary to do it for the <code>get_*</code> function call or buffer rendering. While layout text is immutable and can't be changed without redoing BiDi reordering and reshaping, layout size and alignment as well as embedded object sizes can be changed dynamically. Doing so is much faster than new buffer creation.</p>
 <h2>Limited vertical text support:</h2>
-<p>While Godot controls are designed to work with horizontal text only, text server and <code>TextLine</code>/<code>TextParagraph</code> classes have limited vertical text support as well. Vertical layouts can be enabled by setting <code>orientation</code> property of the text buffer or helper class.</p>
+<p>While Godot controls are designed to work with horizontal text only, text server and <code>TextLine</code>/<code>TextParagraph</code> classes have limited vertical text support as well. Vertical layouts can be enabled by setting the  <code>orientation</code> property of the text buffer or helper class.</p>
 <figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/Screenshot-2020-12-21-at-12.40.51.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.40.51-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.40.51-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.40.51-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.40.51-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.40.51-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.40.51-2xl.png 1600w"  alt="" width="112" height="932"></figure>
 <h2>Input:</h2>
-<p>Godot BiDi caret movement follows logical order of characters (right arrow key always acts as movement forward). When the caret is located on the edge of RTL and LTR text segments two carets are displayed, each one indicating a position where newly inputted RTL and LTR characters will be displayed. Primary caret, which controls control scrolling, is determined based on the direction of the last inputted character (or can be switched manually, by using <code>Ctrl/Cmd + ~</code>).</p>
+<p>Godot BiDi caret movement follows logical order of characters (right arrow key always acts as movement forward). If the caret is located on the edge of RTL and LTR text segments, two carets are displayed. Each one indicating a position where newly inputted RTL and LTR characters will be displayed. Primary caret, which controls control scrolling, is determined based on the direction of the last inputted character (or can be switched manually, by using <code>Ctrl/Cmd + ~</code>).</p>
 <figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/Screenshot-2020-12-16-at-11.27.55.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-16-at-11.27.55-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-16-at-11.27.55-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-16-at-11.27.55-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-16-at-11.27.55-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-16-at-11.27.55-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-16-at-11.27.55-2xl.png 1600w"  alt="" width="602" height="66"></figure>
 <p>By default, all input keys except Backspace, which always deletes a single character, moves caret over the whole grapheme (e.g. base character and combining diacritics):<figure class="post__image"><img loading="lazy"  src="https://bruvzg.github.io/media/posts/8/Screenshot-2020-12-21-at-12.09.15.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.09.15-xs.png 300w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.09.15-sm.png 480w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.09.15-md.png 768w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.09.15-lg.png 1024w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.09.15-xl.png 1360w ,https://bruvzg.github.io/media/posts/8/responsive/Screenshot-2020-12-21-at-12.09.15-2xl.png 1600w"  alt="" width="433" height="227"></figure>
 <p>This behavior can be changed by setting <code>mid_grapheme_caret</code> control property:</p>
@@ -135,7 +135,7 @@
 </div>
 </div>
 </div>
-<p>All input controls fully support structured text BiDi overrides, which do not interfere with caret movement, do not affect contents of the underlying raw string and unlike Unicode control characters can't be accidentally deleted by the user.</p>
+<p>All input controls fully support structured text BiDi overrides, which do not interfere with caret movement, do not affect contents of the underlying raw string and unlike Unicode control characters can't be accidentally modified by the user.</p>
 <h2>Compatibility:</h2>
 <p>While there are breaking changes in the <code>Font</code> and <code>Theme</code>, existing 3.2 scenes can be loaded directly, some of the conversions will be done automatically:</p>
 <p><code>DynamicFont</code> and <code>BitmapFont</code> resources are converted to the new unified <code>Font</code> resources, but font size will be lost, and should be re-added in the theme properties of the controls.</p>
@@ -146,8 +146,8 @@
 </ul>
 <h2>ICU data, build options and export templates:</h2>
 <p>Full-blown CTL support is slower and results in the bigger binary size, since some game project do not need CTL at all, or text usage is very limited, multiple compile options are available to control text server building.</p>
-<p>Following build options are available:</p>
-<div><code>builtin_graphite</code>, <code>builtin_harfbuzz</code> and <span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"><code>builtin_icu</code> (default value: True) - If true, uses builtin version of the libraries instead of system copies.</span></div>
+<p>The following build options are available:</p>
+<div><code>builtin_graphite</code>, <code>builtin_harfbuzz</code> and <span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"><code>builtin_icu</code> (default value: True) - If true, uses built-in version of the libraries instead of system copies.</span></div>
 <p>There are two text server implementations available by default:</p>
 <ul>
 <li>ICU, HarfBuzz and SIL Graphite 2 based text server with the full complex text layout support.</li>
