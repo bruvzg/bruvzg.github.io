@@ -3,7 +3,7 @@
     <title>bruvzg.github.io</title>
     <link href="https://bruvzg.github.io/feed.xml" rel="self" />
     <link href="https://bruvzg.github.io" />
-    <updated>2020-12-30T20:16:15+02:00</updated>
+    <updated>2021-01-07T22:03:44+02:00</updated>
     <author>
         <name>bruvzg</name>
     </author>
@@ -332,10 +332,10 @@
         <id>https://bruvzg.github.io/using-godot-with-swiftshader-software-vulkan-emulation.html</id>
             <category term="Godot"/>
 
-        <updated>2020-12-30T20:16:15+02:00</updated>
+        <updated>2021-01-07T22:03:44+02:00</updated>
             <summary>
                 <![CDATA[
-                    Download SwiftShader source - https://swiftshader.googlesource.com/SwiftShader/git clone https://swiftshader.googlesource.com/SwiftShader Download apply following patch to the SwiftShader source to bump descriptor limit - patch_vm_vlk_swiftshader.diffgit apply patch_vm_vlk_swiftshader.diffBuild SwiftShader ICD as described in https://swiftshader.googlesource.com/SwiftShader/#building Note: Disable GL/EGL and ANGLE related build features (SWIFTSHADER_BUILD_ANGLE, SWIFTSHADER_BUILD_EGL, SWIFTSHADER_BUILD_GLES_CM, SWIFTSHADER_BUILD_GLESv2, SWIFTSHADER_BUILD_PVR) for the faster&hellip;
+                    Download SwiftShader source - https://swiftshader.googlesource.com/SwiftShader/git clone https://swiftshader.googlesource.com/SwiftShader Build SwiftShader ICD as described in https://swiftshader.googlesource.com/SwiftShader/#building Note: Disable GL/EGL and ANGLE related build features (SWIFTSHADER_BUILD_ANGLE, SWIFTSHADER_BUILD_EGL, SWIFTSHADER_BUILD_GLES_CM, SWIFTSHADER_BUILD_GLESv2, SWIFTSHADER_BUILD_PVR) for the faster build time.Download master branch of Godot - https://github.com/godotengine/godotgit clone https://github.com/godotengine/godot.gitDownload apply following patch to Godot&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -350,15 +350,6 @@
 </tbody>
 </table>
 <br><a href="https://swiftshader.googlesource.com/SwiftShader/" target="_blank" rel="noopener noreferrer"></a></li>
-<li>Download apply following patch to the  SwiftShader source to bump descriptor limit - <a href="https://bruvzg.github.io/media/files/patch_vm_vlk_swiftshader.diff" target="_blank" rel="noopener noreferrer">patch_vm_vlk_swiftshader.diff</a>
-<table style="border-collapse: collapse; width: 100%;" border="1">
-<tbody>
-<tr>
-<td style="width: 100%;">git apply patch_vm_vlk_swiftshader.diff</td>
-</tr>
-</tbody>
-</table>
-<a href="https://bruvzg.github.io/media/files/patch_vm_vlk_swiftshader.diff" target="_blank" rel="noopener noreferrer"></a></li>
 <li>Build SwiftShader ICD as described in <a href="https://swiftshader.googlesource.com/SwiftShader/#building" target="_blank" rel="noopener noreferrer">https://swiftshader.googlesource.com/SwiftShader/#building</a><br><em>Note: Disable GL/EGL and ANGLE related build features (<code>SWIFTSHADER_BUILD_ANGLE, SWIFTSHADER_BUILD_EGL, SWIFTSHADER_BUILD_GLES_CM, SWIFTSHADER_BUILD_GLESv2, SWIFTSHADER_BUILD_PVR</code>) for the faster build time.</em></li>
 <li>Download <em>master</em> branch of Godot - <a href="https://github.com/godotengine/godot" target="_blank" rel="noopener noreferrer">https://github.com/godotengine/godot</a>
 <table style="border-collapse: collapse; width: 100%;" border="1">
